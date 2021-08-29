@@ -1,0 +1,322 @@
+header {
+  animation: anim4Header 4s linear 0s normal forwards;
+}
+
+.wrapper {
+  opacity: 0;
+  animation: opacityTo1 4s ease 2s normal forwards;
+}
+
+#frameRen1 {
+  opacity: 0;
+  animation: opacityTo1 2s linear 5s normal forwards;
+}
+
+#renata1 {
+  opacity: 0;
+  animation: opacity0To1To0 100s linear 4s normal forwards;
+}
+#bubble1 {
+  opacity: 0;
+  animation: opacity0To1To0 20s linear 5s normal forwards;
+}
+#txt1 {
+  opacity: 0;
+  animation: opacity0To1To0 6s linear 5s normal forwards;
+}
+#txt2 {
+  opacity: 0;
+  animation: opacity0To1To0 10s linear 9s normal forwards;
+}
+#txt3 {
+  opacity: 0;
+  animation: opacity0To1To0 5s linear 12s normal forwards;
+}
+#txt4 {
+  opacity: 0;
+  animation: opacityTo1 1s linear 20s normal forwards;
+}
+
+#tiradorUp {
+  opacity: 0;
+  animation: opacity0To1To0 15s linear 4s normal forwards;
+}
+#tiradorDown {
+  opacity: 0;
+  animation: opacityTo1 1s linear 18s normal forwards;
+}
+
+#mouth1Renata {
+  animation: opacityTo1 1s linear 6s normal forwards;
+  animation: opacityTo0 2s linear 8s infinite forwards;
+}
+
+#mouth2Renata {
+  opacity: 0;
+  animation: opacityTo1 1s linear 9s normal forwards;
+  animation: opacityTo0 2s linear 12s infinite forwards;
+}
+#armSwitch2Group {
+  opacity: 0;
+
+  animation: opacity0To1To0 1s linear 18s normal forwards;
+}
+
+#armSwitch1Group {
+  opacity: 0;
+
+  animation: opacity0To1To0 1s linear 17s normal forwards;
+}
+#arm2Group {
+  opacity: 0;
+
+  animation: opacity0To1To0 1s linear 16s normal forwards;
+}
+#arm1Group {
+  opacity: 1;
+
+  animation: opacity1To0to1 3s linear 16s normal forwards;
+}
+
+#platform1SVG {
+  animation: opacityTo1 1s linear 3s normal forwards;
+}
+#platform1Group {
+  stroke-width: 56;
+  stroke-dasharray: 12;
+  stroke-dashoffset: 6;
+}
+#platform1Group path :nth-child(0) {
+  animation: animStrokeArray 3s infinite 12s normal forwards;
+  animation: line-anim 6s infinite 20s ease forwards;
+  animation: fill 3s infinite 20s ease forwards;
+}
+
+#controllerFrameSVG {
+  animation: opacityTo1 1s linear 4s normal forwards;
+
+  animation: animStrokeArray 3s infinite 12s normal forwards;
+  animation: line-anim 6s infinite 20s ease forwards;
+  animation: fill 3s infinite 20s ease forwards;
+}
+
+#controllerFrameG {
+  animation: opacityTo1Still 24s linear 0s normal forwards;
+}
+#basecampIcon {
+  animation: opacityTo1Still 24s linear 0s normal forwards;
+}
+
+#excelicon {
+  animation: opacityTo1Still 24s linear 0s normal forwards;
+}
+#jiraIcon {
+  animation: opacityTo1Still 24s linear 0s normal forwards;
+}
+#trelloIcon {
+  animation: opacityTo1Still 24s linear 0s normal forwards;
+}
+
+#scrum {
+  animation: animStrokeArray 3s infinite 0s normal forwards;
+  animation: fill 2s infinite 0s normal forwards;
+}
+#scrum path :nth-child(0) {
+  animation: animStrokeArray 3s infinite 0s normal forwards;
+  animation: fill 2s infinite 0s normal forwards;
+}
+#scrum path :nth-child(1) {
+  animation: animStrokeArray 3s infinite 0s normal forwards;
+  animation: fill 2s infinite 0s normal forwards;
+}
+
+#skillsIcon {
+  animation: opacityTo1Still 24s linear 0s normal forwards;
+}
+/*#platform1 {
+  opacity: 0;
+  animation: opacityAnim 6s linear 0s normal forwards;
+  animation: fill 3s easy 0s normal forwards;
+}*/
+
+/*
+.dialogBubbleContainer {
+  animation: opacityAnim 24s linear 1s normal forwards;
+}
+
+
+/*@keyframes openingAnim {
+  0% {
+    transform: scale(6);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}*/
+/*
+.mainPlatformStartSVG {
+  transform: translate(0%, 0%);
+}
+.mainPlatformStartSVG path {
+  stroke-dasharray: 12;
+  stroke-dashoffset: 3;
+  animation: animStrokeArray 24s ease 1s infinite forwards;
+}
+
+.main2Platformer2 {
+  transform: translate(0%, 0%);
+}
+
+.main2Platformer2 path {
+  stroke-dasharray: 12;
+  stroke-dashoffset: 3;
+  animation: animStrokeArray 24s ease 1s infinite forwards;
+}*/
+/*.polygonMainBack {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}*/
+
+/*.main4Scrum {
+  stroke-opacity: 0;
+  stroke-width: 56px;
+  stroke-dasharray: 12;
+  stroke-dashoffset: 3;
+  animation: workingTools 6s ease 1s normal forwards;
+}
+*/
+/*.main4Scrum path {
+  stroke-dasharray: 56;
+  stroke-dashoffset: 3;
+  animation: animStrokeArray 24s ease 1s infinite forwards;
+}*/
+@keyframes opacity1To0to1 {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity0To1To0 {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacityTo1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacityTo0 {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animStrokeArray {
+  0% {
+    stroke-dasharray: 6;
+    background-color: goldenrod;
+    stroke-width: 56px;
+    stroke-opacity: 0;
+  }
+  100% {
+    stroke-dasharray: 56;
+
+    stroke-width: 24px;
+
+    stroke-opacity: 1;
+    background-color: green;
+  }
+}
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: white;
+  }
+  to {
+    fill: currentColor;
+  }
+}
+@keyframes anim4Header {
+  0% {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+
+    margin-top: 80%;
+    font-size: 1000%;
+
+    z-index: 6;
+  }
+
+  100% {
+    font-size: 80%;
+    height: 3%;
+    margin-top: 0%;
+
+    position: fixed;
+
+    top: 0%;
+  }
+}
+
+/*@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(100deg);
+  }
+}
+@keyframes hideshow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }*/

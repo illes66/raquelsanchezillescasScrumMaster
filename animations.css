@@ -9,16 +9,18 @@ header {
 
 #frameRen1 {
   opacity: 0;
-  animation: opacityTo1 2s linear 5s normal forwards;
+  animation: opacity0To1To0 17s linear 3s normal forwards;
 }
 
 #renata1 {
+  stroke-dashoffset: 0%;
+  z-index: 4;
   opacity: 0;
-  animation: opacity0To1To0 100s linear 4s normal forwards;
+  animation: opacity0To1To0 16s linear 3s normal forwards;
 }
 #bubble1 {
   opacity: 0;
-  animation: opacity0To1To0 20s linear 5s normal forwards;
+  animation: opacity0To1To0 15s linear 4s normal forwards;
 }
 #txt1 {
   opacity: 0;
@@ -26,7 +28,7 @@ header {
 }
 #txt2 {
   opacity: 0;
-  animation: opacity0To1To0 10s linear 9s normal forwards;
+  animation: opacity0To1To0 5s linear 9s normal forwards;
 }
 #txt3 {
   opacity: 0;
@@ -39,11 +41,11 @@ header {
 
 #tiradorUp {
   opacity: 0;
-  animation: opacity0To1To0 15s linear 4s normal forwards;
+  animation: opacity0To1To0 14s linear 4s normal forwards;
 }
 #tiradorDown {
   opacity: 0;
-  animation: opacityTo1 1s linear 18s normal forwards;
+  animation: opacity0To1To0 2s linear 18s normal forwards;
 }
 
 #mouth1Renata {
@@ -79,32 +81,27 @@ header {
 }
 
 #platform1SVG {
-  animation: opacityTo1 1s linear 3s normal forwards;
+  z-index: -1;
+  background-color: white;
 }
-#platform1Group {
-  stroke-width: 56;
+#platform1SVG path {
   stroke-dasharray: 12;
-  stroke-dashoffset: 6;
-}
-#platform1Group path :nth-child(0) {
-  animation: animStrokeArray 3s infinite 12s normal forwards;
-  animation: line-anim 6s infinite 20s ease forwards;
-  animation: fill 3s infinite 20s ease forwards;
+  stroke-dashoffset: 3;
+  animation: animStrokeArray 3s infinite 19s normal forwards;
 }
 
 #controllerFrameSVG {
-  animation: opacityTo1 1s linear 4s normal forwards;
-
-  animation: animStrokeArray 3s infinite 12s normal forwards;
-  animation: line-anim 6s infinite 20s ease forwards;
-  animation: fill 3s infinite 20s ease forwards;
+  background-color: white;
 }
 
-#controllerFrameG {
-  animation: opacityTo1Still 24s linear 0s normal forwards;
+#controllerFrameSVG path {
+  stroke-dasharray: 12;
+  stroke-dashoffset: 3;
+
+  animation: animStrokeArray 12s infinite 19s normal forwards;
 }
-#basecampIcon {
-  animation: opacityTo1Still 24s linear 0s normal forwards;
+/*#basecampIcon {
+  animation: opacityTo1Still s linear 0s normal forwards;
 }
 
 #excelicon {
@@ -116,23 +113,23 @@ header {
 #trelloIcon {
   animation: opacityTo1Still 24s linear 0s normal forwards;
 }
-
+*/
 #scrum {
-  animation: animStrokeArray 3s infinite 0s normal forwards;
-  animation: fill 2s infinite 0s normal forwards;
+  background-color: white;
 }
-#scrum path :nth-child(0) {
-  animation: animStrokeArray 3s infinite 0s normal forwards;
-  animation: fill 2s infinite 0s normal forwards;
-}
-#scrum path :nth-child(1) {
-  animation: animStrokeArray 3s infinite 0s normal forwards;
-  animation: fill 2s infinite 0s normal forwards;
+#scrum path {
+  stroke-dasharray: 12;
+  stroke-dashoffset: 3;
+  animation: animStrokeArray 6s infinite 19s normal forwards;
+
+  /*animation: animStrokeArray 3s infinite 19s normal forwards;
+  animation: fill 4s infinite 19s normal forwards;*/
 }
 
+/*
 #skillsIcon {
   animation: opacityTo1Still 24s linear 0s normal forwards;
-}
+}*/
 /*#platform1 {
   opacity: 0;
   animation: opacityAnim 6s linear 0s normal forwards;
@@ -248,33 +245,22 @@ header {
 
 @keyframes animStrokeArray {
   0% {
-    stroke-dasharray: 6;
-    background-color: goldenrod;
+    stroke-dasharray: 2;
+    stroke-dashoffset: 1;
     stroke-width: 56px;
-    stroke-opacity: 0;
   }
   100% {
-    stroke-dasharray: 56;
-
-    stroke-width: 24px;
-
-    stroke-opacity: 1;
-    background-color: green;
+    stroke-dasharray: 24;
+    stroke-dashoffset: 3;
+    stroke-width: 0px;
   }
 }
 @keyframes line-anim {
   to {
-    stroke-dashoffset: 0;
+    stroke-array: 2;
   }
 }
-@keyframes fill {
-  from {
-    fill: white;
-  }
-  to {
-    fill: currentColor;
-  }
-}
+
 @keyframes anim4Header {
   0% {
     width: 100%;
@@ -298,7 +284,11 @@ header {
     top: 0%;
   }
 }
-
+@keyframes fillToBlack {
+  to {
+    stroke: rgb(0, 0, 0);
+  }
+}
 /*@keyframes spin {
   from {
     transform: rotateZ(0deg);

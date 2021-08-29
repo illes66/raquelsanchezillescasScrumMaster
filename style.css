@@ -32,7 +32,7 @@ header {
   border: 0.6vh solid black;
   width: 100%;
   height: 600vh;
-  background-image: url("/brickPattern.svg");
+  background-image: url("/SVGs/brickPattern.svg");
   background-color: white;
   padding: 5%;
   margin-top: 10%;
@@ -45,7 +45,7 @@ header {
 
   box-sizing: border-box;
   border: 2px solid black;
-  /*background-image: url("/SVGs/platform1.svg");*/
+  /*background-image: url("/SVGs/platform1SVG.svg");*/
   background-color: white;
   box-sizing: border-box;
   border: 1vh dashed black;
@@ -88,6 +88,15 @@ header {
   width: 100%;
 }
 
+.hide {
+  display: none;
+  z-index: 3;
+}
+
+.iconsDiv:hover + .hide {
+  display: block;
+  z-index: 3;
+}
 footer {
   position: fixed;
   left: 0;
@@ -141,5 +150,3 @@ footer {
   }
 }
 
-@media only screen and (min-width: 992px) {
-}

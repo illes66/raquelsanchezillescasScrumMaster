@@ -7,13 +7,16 @@ header {
   animation: opacityTo1 4s ease 2s normal forwards;
 }
 
-#frameRen1 {
+.frameRen1 {
+  width: 420;
+  height: 820;
+
   opacity: 0;
   animation: opacity0To1To0 17s linear 3s normal forwards;
 }
 
 #renata1 {
-  stroke-dashoffset: 0%;
+  stroke-dashoffset: 0;
   z-index: 4;
   opacity: 0;
   animation: opacity0To1To0 16s linear 3s normal forwards;
@@ -80,13 +83,13 @@ header {
   animation: opacity1To0to1 3s linear 16s normal forwards;
 }
 
-#platform1SVG {
+#plaform1Group {
   z-index: -1;
   background-color: white;
 }
-#platform1SVG path {
+#plaform1Group path {
   stroke-dasharray: 12;
-  stroke-dashoffset: 3;
+  stroke-dashoffset: 0;
   animation: animStrokeArray 3s infinite 19s normal forwards;
 }
 

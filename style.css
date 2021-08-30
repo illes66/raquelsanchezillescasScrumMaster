@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 100%;
 }
 
 body {
@@ -24,7 +23,6 @@ header {
 
   position: fixed;
   margin-top: -8%;
-  
 }
 .wrapper {
   display: grid;
@@ -34,8 +32,7 @@ header {
   border: 0.6vh solid black;
   width: 100%;
   height: 600vh;
-  background-image: url("/brickPattern.svg");
-  background-color: white;
+  /*background-image: url("/SVGs/brickPattern.svg");*/
   padding: 5%;
   margin-top: 10%;
   margin-left: 10%;
@@ -48,7 +45,6 @@ header {
   box-sizing: border-box;
   border: 2px solid black;
   /*background-image: url("/SVGs/platform1SVG.svg");*/
-  background-color: white;
   box-sizing: border-box;
   border: 1vh dashed black;
   border-radius: 1vh;
@@ -89,6 +85,16 @@ header {
   height: 85%;
   width: 100%;
 }
+#txt1 {
+  position: relative;
+  width: 21;
+  height: 100;
+
+  background-position-x: 20%;
+  background-position-y: 14%;
+  margin-left: 0%;
+  background-color: aqua;
+}
 
 .hide {
   display: none;
@@ -99,7 +105,7 @@ header {
   display: block;
   z-index: 3;
 }
-a{
+a {
   color: white;
 }
 footer {
@@ -121,27 +127,15 @@ footer {
   footer {
     font-size: 12px;
   }
-}
-@media only screen and (min-width: 969px) {
-  /*Edge*/
-  footer {
-    height: 2%;
-    font-size: 12px;
-  }
-}
-
-  body {
-    padding: 0%;
-    padding-bottom: 0%;
-  }
 
   .wrapper {
     width: 100%;
     height: 2560px;
+    /*height: 2560px;
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
-    background-size: 20%;
+    background-size: 20%;*/
   }
   .one {
     height: 90%;
@@ -158,17 +152,16 @@ footer {
   .frameRen1 {
     width: 50%;
     height: 50%;
-    position: absolute;
     margin-left: 50%;
   }
   #frameRect {
     margin-top: 80%;
     margin-left: 10%;
+    position: relative;
   }
   #txt1 {
-    position: absolute;
-    top: 20%;
-    left: auto;
+    position: fixed;
+    margin-top: 100%s;
   }
   #renata1 {
     position: absolute;
@@ -182,8 +175,7 @@ footer {
     contain: size;
   }
 
-  #platform1 {
-    size: 60%;
+  #platform1SVG {
     margin-top: -1%;
     z-index: -1;
   }
@@ -203,15 +195,9 @@ footer {
 
 @media only screen and (max-width: 937px) {
   /*Chrome*/
-
-  
 }
 @media only screen and (min-width: 969px) {
   /*Edge*/
-  footer {
-    height: 2%;
-    font-size: 12px;
-  }
 }
 
 @media only screen and (min-width: 927px) {

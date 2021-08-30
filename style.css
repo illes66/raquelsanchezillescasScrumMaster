@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 100%;
 }
 
 body {
@@ -23,6 +24,7 @@ header {
 
   position: fixed;
   margin-top: -8%;
+  
 }
 .wrapper {
   display: grid;
@@ -32,7 +34,7 @@ header {
   border: 0.6vh solid black;
   width: 100%;
   height: 600vh;
-  background-image: url("/brickPattern.svg");
+  background-image: url("/SVGs/brickPattern.svg");
   background-color: white;
   padding: 5%;
   margin-top: 10%;
@@ -60,7 +62,7 @@ header {
   background-color: white;
   border: 1vh dashed black;
   border-radius: 1vh;
-  height: 70%;
+  height: 80%;
   width: 100%;
   padding-top: 3%;
 }
@@ -97,6 +99,9 @@ header {
   display: block;
   z-index: 3;
 }
+a{
+  color: white;
+}
 footer {
   position: fixed;
   left: 0;
@@ -110,6 +115,21 @@ footer {
 }
 @media only screen and (max-width: 360px) {
   /*android*/
+  header {
+    height: 2%;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 969px) {
+  /*Edge*/
+  footer {
+    height: 2%;
+    font-size: 12px;
+  }
+}
+
   body {
     padding: 0%;
     padding-bottom: 0%;
@@ -117,7 +137,11 @@ footer {
 
   .wrapper {
     width: 100%;
-    height: 100%;
+    height: 2560px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-size: 20%;
   }
   .one {
     height: 90%;
@@ -131,6 +155,33 @@ footer {
   .four {
     height: 90%;
   }
+  .frameRen1 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    margin-left: 50%;
+  }
+  #frameRect {
+    margin-top: 80%;
+    margin-left: 10%;
+  }
+  #txt1 {
+    position: absolute;
+    top: 20%;
+    left: auto;
+  }
+  #renata1 {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: scale(-50%, -50%);
+
+    contain: size;
+  }
+
   #platform1 {
     size: 60%;
     margin-top: -1%;
@@ -150,5 +201,21 @@ footer {
   }
 }
 
+@media only screen and (max-width: 937px) {
+  /*Chrome*/
+
+  
+}
+@media only screen and (min-width: 969px) {
+  /*Edge*/
+  footer {
+    height: 2%;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 927px) {
+  /*mozila*/
+}
 @media only screen and (min-width: 992px) {
 }

@@ -32,7 +32,8 @@ header {
   border: 0.6vh solid black;
   width: 100%;
   height: 600vh;
-  /*background-image: url("/brickPattern.svg");*/
+  background-image: url("/brickPattern.svg");
+   background-color: white;
   padding: 5%;
   margin-top: 10%;
   margin-left: 10%;
@@ -41,10 +42,9 @@ header {
 .one {
   grid-column: 1 / 12;
   grid-row: 1 / 1 line;
-
+  background-color: white;
   box-sizing: border-box;
   border: 2px solid black;
-  /*background-image: url("/SVGs/platform1SVG.svg");*/
   box-sizing: border-box;
   border: 1vh dashed black;
   border-radius: 1vh;
